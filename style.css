@@ -36,14 +36,27 @@ h1 {
   z-index: -1;
 }
 
-/*sun circle*/
-#forceMe {
+/*square 5*/
+#forceMe11 {
   width: 93px;
   height: 93px;
   background: rgba(255,255,255,0.7);
-  border-radius: 100%;
+  border-radius: 10%;
   position: absolute;
-  top: 408px;
+  top: 412px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transition: -webkit-transform .1s;
+}
+
+/*square 6*/
+#forceMe12 {
+  width: 93px;
+  height: 93px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 10%;
+  position: absolute;
+  top: 412px;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transition: -webkit-transform .1s;

@@ -1,4 +1,4 @@
-var element = document.getElementById('forceMe');
+var element = document.getElementById('forceMe5');
 var forceValueOutput = document.getElementById('forceValue');
 var background = document.getElementById('background');
 var touch = null;
