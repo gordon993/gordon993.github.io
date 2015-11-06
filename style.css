@@ -37,10 +37,10 @@ h1 {
 }
 
 /*square 5*/
-#forceMe11 {
+#forceMe5 {
   width: 93px;
   height: 93px;
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.4);
   border-radius: 10%;
   position: absolute;
   top: 412px;
@@ -50,14 +50,14 @@ h1 {
 }
 
 /*square 6*/
-#forceMe12 {
+#forceMe6 {
   width: 93px;
   height: 93px;
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.4);
   border-radius: 10%;
   position: absolute;
   top: 412px;
-  left: 50%;
+  left: 81%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transition: -webkit-transform .1s;
 }
