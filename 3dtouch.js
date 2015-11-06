@@ -1,4 +1,6 @@
 var element = document.getElementById('forceMe5');
+var element = document.getElementById('forceMe6');
+
 var forceValueOutput = document.getElementById('forceValue');
 var background = document.getElementById('background');
 var touch = null;
@@ -41,6 +43,12 @@ function refreshForceValue() {
 function renderElement(forceValue) {
   element.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
   background.style.webkitFilter = 'blur(' + forceValue * 30 + 'px)';
+  forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
+}
+
+function renderElementInvert(forceValue) {
+  element.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
+  background.style.webkitFilter = 'invert(' + forceValue * 30 + 'px)';
   forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
 }
 
