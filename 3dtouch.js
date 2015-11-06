@@ -40,15 +40,28 @@ function refreshForceValue() {
   renderElement(forceValue);
 }
 
+// blur**
 function renderElement(forceValue) {
   element.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
   background.style.webkitFilter = 'blur(' + forceValue * 30 + 'px)';
   forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
 }
-
+// invert**
 function renderElementInvert(forceValue) {
   element.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
   background.style.webkitFilter = 'invert(' + forceValue * 30 + 'px)';
+  forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
+}
+// hue-rotate**
+function renderElementHueRotate(forceValue) {
+  element.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
+  background.style.webkitFilter = 'hue-rotate(' + forceValue * 30 + 'px)';
+  forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
+}
+// saturate**
+function renderElementSaturate(forceValue) {
+  element.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
+  background.style.webkitFilter = 'saturate(' + forceValue * 30 + 'px)';
   forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
 }
 
