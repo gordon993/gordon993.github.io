@@ -48,11 +48,11 @@ h1 {
   transition: -webkit-transform .1s;
 }
 
-/*@media (min-width: 414px) {
+@media (min-width: 414px) {
   #forceMe {
     top: 450px;
   }
-}*/
+}
 
 #forceValue {
   position: fixed;
