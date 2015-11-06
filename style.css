@@ -48,24 +48,16 @@ h1 {
   transition: -webkit-transform .1s;
 }
 
-@media (min-width: 414px) {
+/*@media (min-width: 414px) {
   #forceMe {
     top: 450px;
   }
-}
-
-#footer {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  width: 100%;
-  text-align: right;
-}
+}*/
 
 #forceValue {
   position: fixed;
+  font-size: 1.5em;
   bottom: 10px;
-  left: 10px;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
