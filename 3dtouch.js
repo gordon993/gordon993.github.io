@@ -43,13 +43,13 @@ function refreshForceValue() {
 // blur**
 function renderElement(forceValue) {
   element.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
-  background.style.webkitFilter = 'invert(' + forceValue * 30 + 'px)';
+  background.style.webkitFilter = 'invert(' + forceValue * 80 + 'px)';
   forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
 }
 // invert**
 function renderElementInvert(forceValue) {
   element.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
-  background.style.webkitFilter = 'invert(' + forceValue * 30 + 'px)';
+  background.style.webkitFilter = 'invert(' + forceValue * 80 + 'px)';
   forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
 }
 // hue-rotate**
