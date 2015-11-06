@@ -28,7 +28,7 @@ h1 {
   max-width: 414px;
   min-width: 375px;
   height: 100vh;
-  background-image: url(bg.jpg);
+  background-image: url(bg2.png);
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 100% auto;
@@ -36,6 +36,7 @@ h1 {
   z-index: -1;
 }
 
+/*sun circle*/
 #forceMe {
   width: 93px;
   height: 93px;
