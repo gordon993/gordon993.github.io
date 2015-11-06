@@ -36,15 +36,15 @@ h1 {
   z-index: -1;
 }
 
-/*square 5*/
-#forceMe5 {
+/*square 4*/
+#forceMe4 {
   width: 93px;
   height: 93px;
   background: rgba(255,255,255,0.4);
   border-radius: 10%;
   position: absolute;
   top: 412px;
-  left: 50%;
+  left: 19%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transition: -webkit-transform .1s;
 }
