@@ -1,4 +1,4 @@
-var el = event.currentTarget;
+var el = this.currentTarget;
 
 var element4 = document.getElementById('forceMe4');
 var element6 = document.getElementById('forceMe6');
