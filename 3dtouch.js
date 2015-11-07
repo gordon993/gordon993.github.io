@@ -1,4 +1,5 @@
-var el = this.currentTarget;
+// var el = this.currentTarget;
+alert("the alert works");
 
 var element4 = document.getElementById('forceMe4');
 var element6 = document.getElementById('forceMe6');
@@ -12,7 +13,6 @@ addForceTouchToElement(el);
 
 function onTouchStart(e) {
   e.preventDefault();
-  alert("the target is " + el.id);
   checkForce(e);
 }
 function onTouchMove(e) {
