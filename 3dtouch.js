@@ -24,26 +24,41 @@ function onTouchEnd(e) {
 }
 function checkForce(e) {
   touch = e.touches[0];
-  setTimeout(refreshForceValue.bind(touch), 10);
+  if (el === element4) {
+  setTimeout(refreshForceValue4.bind(touch), 10);
+
+  } else {
+  setTimeout(refreshForceValue6.bind(touch), 10);
+  
+  };
 }
-function refreshForceValue() {
+function refreshForceValue4() {
   var touchEvent = this;
   var forceValue = 0;
   if(touchEvent) {
     forceValue = touchEvent.force || 0;
-    setTimeout(refreshForceValue.bind(touch), 10);
+    setTimeout(refreshForceValue4.bind(touch), 10);
   }else{
     forceValue = 0;
   }
-  renderElementBlur(forceValue, el);
+  renderElementBlur(forceValue);
+
+}
+function refreshForceValue6() {
+  var touchEvent = this;
+  var forceValue = 0;
+  if(touchEvent) {
+    forceValue = touchEvent.force || 0;
+    setTimeout(refreshForceValue6.bind(touch), 10);
+  }else{
+    forceValue = 0;
+  }
   renderElementInvert(forceValue);
-  renderElementHueRotate(forceValue);
-  renderElementHueSaturate(forceValue);
 }
 
 // blur**
-function renderElementBlur(forceValue, el) {
-  el.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
+function renderElementBlur(forceValue) {
+  element4.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
   background.style.webkitFilter = 'blur(' + forceValue * 50 + 'px)';
   forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
 }
@@ -71,3 +86,9 @@ function addForceTouchToElement(elem) {
   elem.addEventListener('touchmove', onTouchMove, false);
   elem.addEventListener('touchend', onTouchEnd, false);
 }
+
+// function addForceTouchToElement6(elem) {
+//   elem.addEventListener('touchstart', onTouchStart, false);
+//   elem.addEventListener('touchmove', onTouchMove, false);
+//   elem.addEventListener('touchend', onTouchEnd, false);
+// }
