@@ -43,7 +43,7 @@ function refreshForceValue() {
 
 // blur**
 function renderElementBlur(forceValue) {
-  element4.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
+  this.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
   background.style.webkitFilter = 'blur(' + forceValue * 50 + 'px)';
   forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
 }
