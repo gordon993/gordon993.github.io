@@ -35,15 +35,15 @@ function refreshForceValue() {
   }else{
     forceValue = 0;
   }
-  renderElementBlur(forceValue);
+  renderElementBlur(forceValue, el);
   renderElementInvert(forceValue);
   renderElementHueRotate(forceValue);
   renderElementHueSaturate(forceValue);
 }
 
 // blur**
-function renderElementBlur(forceValue) {
-  this.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
+function renderElementBlur(forceValue, el) {
+  el.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
   background.style.webkitFilter = 'blur(' + forceValue * 50 + 'px)';
   forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
 }
