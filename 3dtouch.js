@@ -1,4 +1,4 @@
-var element5 = document.getElementById('forceMe4');
+var element4 = document.getElementById('forceMe4');
 var element6 = document.getElementById('forceMe6');
 
 var forceValueOutput = document.getElementById('forceValue');
@@ -6,11 +6,12 @@ var background = document.getElementById('background');
 var touch = null;
 
 addForceTouchToElement(element4);
-addForceTouchToElement(element6);
+// addForceTouchToElement(element6);
 
 function onTouchStart(e) {
   e.preventDefault();
   checkForce(e);
+  console.log("at touch start the touch value is " + touch);
 }
 
 function onTouchMove(e) {
