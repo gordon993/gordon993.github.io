@@ -1,5 +1,5 @@
-var element = document.getElementById('forceMe4');
-var element = document.getElementById('forceMe6');
+var element4 = document.getElementById('forceMe4');
+var element6 = document.getElementById('forceMe6');
 
 var forceValueOutput = document.getElementById('forceValue');
 var background = document.getElementById('background');
@@ -49,7 +49,7 @@ function renderElement(forceValue) {
 // invert**
 function renderElementInvert(forceValue) {
   element.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
-  background.style.webkitFilter = 'invert(' + forceValue * 80 + 'px)';
+  background.style.webkitFilter = 'invert(' + forceValue * 80 + '%)';
   forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
 }
 // hue-rotate**
