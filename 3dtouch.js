@@ -1,3 +1,5 @@
+var el = this.target;
+
 var element4 = document.getElementById('forceMe4');
 var element6 = document.getElementById('forceMe6');
 
@@ -5,30 +7,25 @@ var forceValueOutput = document.getElementById('forceValue');
 var background = document.getElementById('background');
 var touch = null;
 
-addForceTouchToElement(element4);
-addForceTouchToElement(element6);
+addForceTouchToElement(el);
+// addForceTouchToElement(element6);
 
 function onTouchStart(e) {
   e.preventDefault();
   checkForce(e);
-  console.log("at touch start the touch value is " + touch);
 }
-
 function onTouchMove(e) {
   e.preventDefault();
   checkForce(e);
 }
-
 function onTouchEnd(e) {
   e.preventDefault();
   touch = null;
 }
-
 function checkForce(e) {
   touch = e.touches[0];
   setTimeout(refreshForceValue.bind(touch), 10);
 }
-
 function refreshForceValue() {
   var touchEvent = this;
   var forceValue = 0;
@@ -38,13 +35,12 @@ function refreshForceValue() {
   }else{
     forceValue = 0;
   }
-
   renderElement(forceValue);
 }
 
 // blur**
-function renderElement(forceValue) {
-  element4.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
+function renderElement(forceValue, el) {
+  el.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
   background.style.webkitFilter = 'blur(' + forceValue * 50 + 'px)';
   forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
 }
