@@ -1,4 +1,3 @@
-var el = this.currentTarget;
 
 var element4 = document.getElementById('forceMe4');
 var element6 = document.getElementById('forceMe6');
@@ -82,6 +81,8 @@ function renderElementSaturate(forceValue) {
 }
 
 function addForceTouchToElement(elem) {
+  var el = elem.currentTarget;
+
   elem.addEventListener('touchstart', onTouchStart, false);
   elem.addEventListener('touchmove', onTouchMove, false);
   elem.addEventListener('touchend', onTouchEnd, false);
