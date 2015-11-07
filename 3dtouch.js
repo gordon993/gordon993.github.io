@@ -6,7 +6,7 @@ var background = document.getElementById('background');
 var touch = null;
 
 addForceTouchToElement(element4);
-// addForceTouchToElement(element6);
+addForceTouchToElement(element6);
 
 function onTouchStart(e) {
   e.preventDefault();
