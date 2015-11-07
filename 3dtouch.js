@@ -12,6 +12,7 @@ addForceTouchToElement(el);
 
 function onTouchStart(e) {
   e.preventDefault();
+  alert("the target is " + el.id);
   checkForce(e);
 }
 function onTouchMove(e) {
