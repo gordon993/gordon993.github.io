@@ -22,6 +22,7 @@ function onTouchEnd(e) {
   touch = null;
 }
 function checkForce(e) {
+  var el = e.currentTarget;
   touch = e.touches[0];
   if (el === element4) {
   setTimeout(refreshForceValue4.bind(touch), 10);
@@ -81,7 +82,6 @@ function renderElementSaturate(forceValue) {
 }
 
 function addForceTouchToElement(elem) {
-  var el = elem.currentTarget;
 
   elem.addEventListener('touchstart', onTouchStart, false);
   elem.addEventListener('touchmove', onTouchMove, false);
