@@ -13,10 +13,20 @@ a {
   text-decoration: none;
 }
 
+body span {
+  background-color: #fbae17;
+  box-shadow: 6px 0 0px 0px #fe9f97, -6px 0 0px 0px #fe9f97;
+}
+
 h1 {
   font-weight: 00;
   font-size: 40px;
   margin-bottom: 0;
+}
+
+h1 span {
+  background-color: #fbae17;
+  box-shadow: 6px 0 0px 0px #fe9f97, -6px 0 0px 0px #fe9f97;
 }
 
 #background {
