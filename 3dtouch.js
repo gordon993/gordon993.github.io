@@ -22,6 +22,7 @@ function onTouchEnd(e) {
   touch = null;
 }
 function checkForce(e) {
+
   var el = e.currentTarget;
   touch = e.touches[0];
   if (el === element4) {
@@ -29,7 +30,7 @@ function checkForce(e) {
 
   } else {
   setTimeout(refreshForceValue6.bind(touch), 10);
-  
+
   };
 }
 function refreshForceValue4() {
@@ -82,14 +83,7 @@ function renderElementSaturate(forceValue) {
 }
 
 function addForceTouchToElement(elem) {
-
   elem.addEventListener('touchstart', onTouchStart, false);
   elem.addEventListener('touchmove', onTouchMove, false);
   elem.addEventListener('touchend', onTouchEnd, false);
 }
-
-// function addForceTouchToElement6(elem) {
-//   elem.addEventListener('touchstart', onTouchStart, false);
-//   elem.addEventListener('touchmove', onTouchMove, false);
-//   elem.addEventListener('touchend', onTouchEnd, false);
-// }
