@@ -41,7 +41,7 @@ function refreshForceValue4(elem, touch) {
   var forceValue = 0;
   if(touchEvent) {
     forceValue = touchEvent.force || 0;
-    setTimeout(refreshForceValue4.bind(touch), 10);
+  setTimeout(refreshForceValue4(el, touch), 10);
   }else{
     forceValue = 0;
   }
