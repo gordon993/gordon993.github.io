@@ -51,35 +51,28 @@ h1 {
 
 /*square 4*/
 #forceMe4 {
-  width: 93px;
-  height: 93px;
-  background: rgba(255,255,255,0.4);
+  width: 60px;
+  height: 60px;
+  background: rgba(255,255,255,0.1);
   border-radius: 10%;
   position: absolute;
-  top: 412px;
-  left: 19%;
+  top: 417px;
+  left: 100px;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transition: -webkit-transform .1s;
 }
 
 /*square 6*/
 #forceMe6 {
-  width: 93px;
-  height: 93px;
-  background: rgba(255,255,255,0.4);
+  width: 60px;
+  height: 60px;
+  background: rgba(255,255,255,0.1);
   border-radius: 10%;
   position: absolute;
-  top: 412px;
-  left: 81%;
+  top: 417px;
+  left: 270px;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transition: -webkit-transform .1s;
-}
-
-
-@media (min-width: 414px) {
-  #forceMe {
-    top: 450px;
-  }
 }
 
 #forceValue {
@@ -88,4 +81,10 @@ h1 {
   bottom: 10px;
   width: 100%;
   text-align: center;
+}
+
+@media (min-width: 414px) {
+  #forceMe {
+    top: 450px;
+  }
 }
