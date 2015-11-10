@@ -8,26 +8,29 @@ body {
   text-align: center;
 }
 
+p {background-color: #fbae17;}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-body span {
+/*body span {
   background-color: #fbae17;
   box-shadow: 6px 0 0px 0px #fe9f97, -6px 0 0px 0px #fe9f97;
-}
+}*/
 
 h1 {
   font-weight: 00;
   font-size: 40px;
   margin-bottom: 0;
+  background-color: #fbae17;
 }
 
-h1 span {
+/*h1 span {
   background-color: #fbae17;
-  box-shadow: 6px 0 0px 0px #fe9f97, -6px 0 0px 0px #fe9f97;
-}
+  box-shadow: 9px 0 0px 0px #fe9f97, -9px 0 0px 0px #fe9f97;
+}*/
 
 #background {
   position: absolute;

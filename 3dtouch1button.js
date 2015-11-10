@@ -29,7 +29,6 @@ function checkForce(e) {
 
   // } else {
   // setTimeout(refreshForceValue6.bind(touch), 10);
-  
   // };
 }
 function refreshForceValue4() {
@@ -56,10 +55,10 @@ function refreshForceValue6() {
   renderElementInvert(forceValue);
 }
 
-// blur**
+// hue-rotate**
 function renderElementBlur(forceValue) {
   element4.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
-  background.style.webkitFilter = 'blur(' + forceValue * 50 + 'px)';
+  background.style.webkitFilter = 'hue-rotate(' + forceValue * 70 + 'deg)';
   forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
 }
 // invert**
@@ -68,10 +67,10 @@ function renderElementInvert(forceValue) {
   background.style.webkitFilter = 'invert(' + forceValue * 80 + '%)';
   forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
 }
-// hue-rotate**
+// blur**
 function renderElementHueRotate(forceValue) {
   element.style.webkitTransform = 'translateX(-50%) translateY(-50%) scale(' + (1 + forceValue * 1.5) + ')';
-  background.style.webkitFilter = 'hue-rotate(' + forceValue * 30 + 'px)';
+  background.style.webkitFilter = 'blur(' + forceValue * 30 + 'px)';
   forceValueOutput.innerHTML = 'Force: ' + forceValue.toFixed(4);
 }
 // saturate**
