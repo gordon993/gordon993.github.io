@@ -75,7 +75,7 @@ h1 {
   transition: -webkit-transform .1s;
 }
 
-#forceValue {
+#forceValueOutput{
   position: fixed;
   font-size: 1.5em;
   bottom: 10px;
@@ -88,3 +88,4 @@ h1 {
     top: 450px;
   }
 }
+
